@@ -62,9 +62,9 @@ function tzdata_url(version::AbstractString="latest")
     # Note: We could also support FTP but the IANA server is unreliable and likely
     # to break if working from behind a firewall.
     if version == "latest"
-        "https://www.iana.org/time-zones/repository/tzdata-latest.tar.gz"
+        "http://www.iana.org/time-zones/repository/tzdata-latest.tar.gz"
     else
-        "https://www.iana.org/time-zones/repository/releases/tzdata$version.tar.gz"
+        "http://www.iana.org/time-zones/repository/releases/tzdata$version.tar.gz"
     end
 end
 
